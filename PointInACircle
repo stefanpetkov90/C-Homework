@@ -1,0 +1,26 @@
+using System;
+
+class PointCircle
+{
+    static void Main()
+    {
+        Console.WriteLine("Please enter the coordinates X and Y");
+
+        Console.Write("X = ");
+        decimal firstNumber = decimal.Parse(Console.ReadLine());
+
+        Console.Write("Y = ");
+        decimal secondNumber = decimal.Parse(Console.ReadLine());
+
+        Console.Write("Please enter circle radius: ");
+        decimal circleRadius = decimal.Parse(Console.ReadLine());
+
+        bool inCircle = ((firstNumber * firstNumber + secondNumber * secondNumber)) <= (circleRadius * circleRadius);
+        if (inCircle == true)
+        {
+            Console.WriteLine("The point is within the circle \n {0}", inCircle);
+        }
+        else
+            Console.WriteLine("The point is NOT within the circle");
+    }
+}
