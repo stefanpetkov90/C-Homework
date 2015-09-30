@@ -1,0 +1,20 @@
+using System;
+
+class ThirdDigit7
+{
+    static void Main()
+    {
+        Console.WriteLine("Please enter a valid integer number: ");
+        int firstNumber = int.Parse(Console.ReadLine());
+
+        int number = (firstNumber / 100) % 10;
+        if (number == 7)
+        {
+            Console.WriteLine("The third digit from left to right IS 7");
+        }
+        else
+        {
+            Console.WriteLine("The third digit from left to right is NOT 7");
+        }
+    }
+}
